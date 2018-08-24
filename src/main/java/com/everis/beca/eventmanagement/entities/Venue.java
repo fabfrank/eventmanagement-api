@@ -14,6 +14,7 @@ public class Venue extends AbstractEntity {
 	private String state;
 	private String country;
 	private String postalCode;
+	private Integer numero;
 
 	public String getName() {
 		return name;
@@ -83,6 +84,14 @@ public class Venue extends AbstractEntity {
 	
 	public Long getResourceId() {
 		return this.id;
+	}
+
+	public Integer getNumero() {
+		return numero;
+	}
+
+	public void setNumero(Integer numero) {
+		this.numero = numero;
 	}
 
 }
